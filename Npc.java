@@ -1,5 +1,5 @@
-public class Player extends GoodGuy {
-    public Player(String name) {
+public class Npc extends GoodGuy {
+    public Npc(String name) {
         super(name);
     }
 

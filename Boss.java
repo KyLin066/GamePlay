@@ -1,5 +1,5 @@
-public class Enemy extends BadGuy {
-    public Enemy(String name) {
+public class Boss extends BadGuy {
+    public Boss(String name) {
         super(name);
     }
 
