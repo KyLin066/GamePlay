@@ -20,14 +20,9 @@ public class GamePlay {
 
         boss1.yell("");
 
-        // player1.shoot();
+        player1.shoot(enemy1,10);
 
-        // enemy1.shoot();
+        enemy1.shoot(player1,5);
 
-        // enemy1.hit(10);
-
-        // player1.hit(5);
-
-        // player1.miss();
     }
 }
