@@ -1,4 +1,3 @@
-
 public class Character {
     protected String name;
     protected int HP = 100;
@@ -17,11 +16,11 @@ public class Character {
     public void shoot(Character pTarget, int hitVal) {
         System.out.println(name + ".shoot(" + pTarget.name + "," + hitVal + ")");
         pTarget.attack(hitVal);
-        // if( pTarget instanceof GoodGuy){
-        // ((GoodGuy)pTarget).doingGood();
-        // }else if（pTarget instanceof BadGuy){
-        // ((BadGuy)pTarget).doingBad();
-        // }
+        if( pTarget instanceof GoodGuy){
+        ((GoodGuy)pTarget).doingGood();
+        }else if(pTarget instanceof BadGuy){
+        ((BadGuy)pTarget).doingBad();
+        }
         return;
     }
 
