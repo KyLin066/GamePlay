@@ -11,7 +11,12 @@ public class Producer extends Thread {
     @Override
     public void run() {
         while (true) {
-            BadGuy newOne = new BadGuy("");
+            BadGuy newOne;
+            if (Math.random() < 0.2) {
+                newOne = new Boss("Boss");
+            } else {
+                newOne = new Enemy("Enemy");
+            }
             badGuys.add(newOne);
             if (badGuys.size() >= 10)
                 break;
