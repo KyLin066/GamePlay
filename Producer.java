@@ -28,4 +28,8 @@ public class Producer extends Thread {
             }
         }
     }
+
+    public void test(){
+        System.out.println("test");
+    }
 }
